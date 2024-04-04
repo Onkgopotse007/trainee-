@@ -17,7 +17,7 @@ setup(
     author_email='trichard@bhp.org.bw',
     packages=find_packages(),
     include_package_data=True,
-    url='https://github.com/onkgopotse007/trainee_prn.git',
+    url='https://github.com/onkgopotse007/trainee-prn.git',
     license='GPL license, see LICENSE',
     description='Trainee Prn',
     long_description=README,
