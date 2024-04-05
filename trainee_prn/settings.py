@@ -16,6 +16,8 @@ from pathlib import Path
 import sys
 from django.core.management.color import color_style
 import configparser
+from dotenv import load_dotenv
+load_dotenv()
 
 style = color_style()
 
