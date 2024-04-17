@@ -30,17 +30,16 @@ class EdcAppointmentAppConfig(BaseEdcAppointmentAppConfig):
     configurations = [
         AppointmentConfig(
             model='edc_appointment.appointment',
-            related_visit_model='trainee_subject.subjectvisit',
+            related_visit_model='traineesubject.subjectvisit',
             appt_type='clinic')]
 
 
 class EdcVisitTrackingAppConfig(BaseEdcVisitTrackingAppConfig):
     visit_models = {
-        'trainee_subject': ('subject_visit', 'trainee_subject.subjectvisit')
+        'traineesubject': ('subject_visit', 'traineesubject.subjectvisit')
         }
 
 
 class EdcSmsAppConfig(BaseEdcSmsAppConfig):
-    locator_model = 'trainee_subject.subjectlocator'
-    consent_model = 'trainee_subject.subjectconsent'
-    sms_model = 'trainee_subject.sms'
+    locator_model = 'traineesubject.subjectlocator'
+    consent_model = 'traineesubject.subjectconsent'

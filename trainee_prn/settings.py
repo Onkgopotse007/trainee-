@@ -82,7 +82,7 @@ INSTALLED_APPS = [
     'edc_protocol.apps.AppConfig',
     'edc_registration.apps.AppConfig',
     'edc_visit_schedule.apps.AppConfig',
-    'trainee_subject.apps.AppConfig',
+    'traineesubject.apps.AppConfig',
     'trainee_visit_schedule.apps.AppConfig',
     'trainee_prn.apps.EdcFacilityAppConfig',
     'trainee_prn.apps.EdcAppointmentAppConfig',
