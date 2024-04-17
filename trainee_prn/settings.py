@@ -38,7 +38,10 @@ config.read(CONFIG_PATH)
 # KEY_PATH = os.path.join(BASE_DIR, 'crypto_fields')
 
 # EDC SMS configuration
-BASE_API_URL = config['edc_sms']['base_api_url']
+if 'edc_sms' in config:
+    BASE_API_URL = config['edc_sms'].get('base_api_url', '')
+else:
+    BASE_API_URL = ''
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
